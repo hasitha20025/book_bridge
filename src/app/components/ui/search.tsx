@@ -12,7 +12,7 @@ export default function Search() {
                     className="w-full px-10 py-1 focus:outline-none border-none appearance-none "
                     />
 
-                    <button type="submit"><CiSearch className='ml-3' size={30} /></button>
+                    <button type="submit"><CiSearch className='ml-3 text-slate-300' size={30} /></button>
                 </form>
         </div> 
     </>

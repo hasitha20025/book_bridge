@@ -42,9 +42,9 @@ export default function UserNavbar() {
 
         {/* Part 3: Login Button */}
         <div className="flex items-center gap-3">         
-          <BoderBtn name ="Donate" fun={handleDonate} />
+          <RoundBtn name ="Donate" fun={handleDonate} />
           {isLoggedIn && <Profile />}
-          {!isLoggedIn && <RoundBtn name ="Login" fun={handleLogin} />}
+          {!isLoggedIn && <BoderBtn name ="Login" fun={handleLogin} />}
           
         </div>
       </div>
