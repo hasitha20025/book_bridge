@@ -20,7 +20,7 @@ export default function UserNavbar() {
   }
 
   return (
-    <nav className="bg-white shadow-md py-4">
+    <nav className="bg-white shadow-md py-4 mb-2 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-4">
         
         {/* Part 1: Logo and Name */}

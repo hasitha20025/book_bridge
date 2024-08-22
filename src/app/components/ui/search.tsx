@@ -8,7 +8,7 @@ export default function Search() {
                 <form action="" className="flex items-center hover:scale-110 transition ease-in-out delay-100">
                     <input
                     type="text"
-                    placeholder="Search you like Books"
+                    placeholder="Search your like Books"
                     className="w-full px-10 py-1 focus:outline-none border-none appearance-none "
                     />
 
