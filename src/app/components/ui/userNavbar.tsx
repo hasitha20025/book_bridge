@@ -5,12 +5,15 @@ import Logo from '../../../../public/imges/logo/logo.svg'
 import Search from './search';
 import RoundBtn from './roundBtn';
 import BoderBtn from './boderBtn';
+import { useState } from 'react';
 import Profile from './profile';
 
-
 export default function UserNavbar() {
+  
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   function handleLogin() {
     console.log('Login clicked');
+    setIsLoggedIn(true);
   }
   function handleDonate(){
     console.log('Donate clicked');
@@ -40,8 +43,9 @@ export default function UserNavbar() {
         {/* Part 3: Login Button */}
         <div className="flex items-center gap-3">         
           <BoderBtn name ="Donate" fun={handleDonate} />
-          <RoundBtn name ="Login" fun={handleLogin} />	
-          <Profile/>
+          {isLoggedIn && <Profile />}
+          {!isLoggedIn && <RoundBtn name ="Login" fun={handleLogin} />}
+          
         </div>
       </div>
 
