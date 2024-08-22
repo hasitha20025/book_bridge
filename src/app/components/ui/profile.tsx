@@ -1,4 +1,4 @@
-import { DownOutlined } from '@ant-design/icons';
+
 import type { MenuProps } from 'antd';
 import { Dropdown as AntDropdown, Dropdown, Space } from 'antd';
 import Avatar from './avatar';
@@ -39,7 +39,7 @@ const items: MenuProps['items'] = [
 ];
 
 // Define your custom Dropdown component
-export default function CustomDropdown(  ) {
+export default function Profile(  ) {
   return (
     <>
         <Dropdown menu={{ items }}>
