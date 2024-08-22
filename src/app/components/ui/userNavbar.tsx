@@ -1,15 +1,27 @@
+'use client';
+
 import Image from 'next/image'
 import Logo from '../../../../public/imges/logo/logo.svg'
 import Search from './search';
+import RoundBtn from './roundBtn';
+import BoderBtn from './boderBtn';
+import Profile from './profile';
 
 
 export default function UserNavbar() {
+  function handleLogin() {
+    console.log('Login clicked');
+  }
+  function handleDonate(){
+    console.log('Donate clicked');
+  }
+
   return (
     <nav className="bg-white shadow-md py-4">
       <div className="container mx-auto flex items-center justify-between px-4">
         
         {/* Part 1: Logo and Name */}
-        <div className="flex items-center">
+        <div className="flex items-center cursor-pointer">
             <Image
                 src={Logo}
                 alt="Logo"
@@ -26,10 +38,10 @@ export default function UserNavbar() {
         </div>
 
         {/* Part 3: Login Button */}
-        <div className="flex items-center">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
-            Login
-          </button>
+        <div className="flex items-center gap-3">         
+          <BoderBtn name ="Donate" fun={handleDonate} />
+          <RoundBtn name ="Login" fun={handleLogin} />	
+          <Profile/>
         </div>
       </div>
 
