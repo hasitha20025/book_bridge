@@ -14,7 +14,7 @@ const items: MenuProps['items'] = [
     key: '1',
     label: (
       <Link  href="/dashboard" className="flex gap-2">
-        <AiOutlineDashboard className="my-1" /> Dashboard
+        <AiOutlineDashboard className="my-1" size={15} /> Dashboard
       </Link>
     ),
   },
@@ -22,7 +22,7 @@ const items: MenuProps['items'] = [
     key: '2',
     label: (
       <Link href="/dashboard" className="flex gap-2">
-        <CiUser className="my-1" /> Profile
+        <CiUser className="my-1" size={15} /> Profile
       </Link>
     ),
     
@@ -31,7 +31,7 @@ const items: MenuProps['items'] = [
     key: '3',
     label: (
       <Link href="/dashboard" className="flex gap-2">
-        <CiSettings className="my-1" /> Setting
+        <CiSettings className="my-1" size={15} /> Setting
       </Link>
     ),
   },
@@ -40,7 +40,7 @@ const items: MenuProps['items'] = [
     danger: true,
     label:  (
       <Link href="/dashboard" className="flex gap-2">
-        <IoIosLogOut className="my-1" /> Log out
+        <IoIosLogOut className="my-1" size={15} /> Log out
       </Link>
     ),
   },

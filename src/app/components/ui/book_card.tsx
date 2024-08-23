@@ -10,14 +10,16 @@ export default function Book_card(props:{book_name:string; updateTime:string;  i
 
   return (
     <>
-        <div className="bg-white rounded-lg shadow-lg p-4 max-w-xs mx-auto hover: hover:scale-105 transition ease-in-out delay-100">
-            <div className="relative w-full h-56 mb-4">
+        <div className="bg-white rounded-md shadow-lg p-4 max-w-xs mx-auto hover: hover:scale-105 transition ease-in-out delay-100">
+            <div className="relative w-full h-80 mb-4">
                 <Image
                 src={props.image}
                 alt={`Cover of the book ${props.book_name}`}
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg"
+                // width={100}
+                // height={200}
                 />
             </div>
             <div className=' '>             
