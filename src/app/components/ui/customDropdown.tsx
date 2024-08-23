@@ -28,9 +28,9 @@ export default function CustomDropdown({ name, menuItems }: CustomDropdownProps)
   }));
 
   return (
-    <Dropdown menu={{ items }}>
+    <Dropdown menu={{ items }} className="rounded-full border-2 border-text-gray-800 px-3">
       <Link href={``} onClick={(e) => e.preventDefault()}>
-        <Space className="hover:text-primary">{name}<MdArrowDropDown /></Space>    
+        <Space className="hover:text-primary">{name}<MdArrowDropDown className="-ml-2" /></Space>    
       </Link>
     </Dropdown>
   );

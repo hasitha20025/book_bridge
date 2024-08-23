@@ -18,20 +18,22 @@ export default function Category() {
 
   return (
     <>
-      <h1 className="  text-center text-text my-5 text-4xl font-bold leading-tight">Book Categories</h1>
-      <div className="flex flex-wrap items-center justify-center gap-5">
-        <CustomDropdown name="Fiction" menuItems={Fiction} />
-        <CustomDropdown name="Non-Fiction" menuItems={Non_Fiction} />
-        <CustomDropdown name="Reference" menuItems={Reference} />
-        <CustomDropdown name="Academic & Educational" menuItems={Academic_and_Educational} />
-        <CustomDropdown name="Others" menuItems={Others} />
-        <CustomDropdown name="Hobbies" menuItems={Hobbies} />
-        <CustomDropdown name="Pre School" menuItems={PreSchool} />
-        <CustomDropdown name="Grade 1 to 5" menuItems={Grade_1_5} />
-        <CustomDropdown name="Grade 6 to 9" menuItems={Grade_6_9} />
-        <CustomDropdown name="O/L" menuItems={O_L} />
-        <CustomDropdown name="A/L" menuItems={A_L} />
-      </div>
+      <section id="category">
+        <h1 className="  text-center text-text my-5 text-4xl font-bold leading-tight">Book Categories</h1>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <CustomDropdown name="Fiction" menuItems={Fiction} />
+          <CustomDropdown name="Non-Fiction" menuItems={Non_Fiction} />
+          <CustomDropdown name="Reference" menuItems={Reference} />
+          <CustomDropdown name="Academic & Educational" menuItems={Academic_and_Educational} />
+          <CustomDropdown name="Others" menuItems={Others} />
+          <CustomDropdown name="Hobbies" menuItems={Hobbies} />
+          <CustomDropdown name="Pre School" menuItems={PreSchool} />
+          <CustomDropdown name="Grade 1 to 5" menuItems={Grade_1_5} />
+          <CustomDropdown name="Grade 6 to 9" menuItems={Grade_6_9} />
+          <CustomDropdown name="O/L" menuItems={O_L} />
+          <CustomDropdown name="A/L" menuItems={A_L} />
+        </div>
+      </section>
     </>
   );
 }

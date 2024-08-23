@@ -30,7 +30,8 @@ export default function UserNavbar() {
                 src={Logo}
                 alt="Logo"
                 width={50} 
-                height={50} 
+                height={50}
+                className='mt-1' 
                 
             />
            <h1 className=" ml-2 text-text text-4xl font-bold leading-tight">Book Bridge</h1>
