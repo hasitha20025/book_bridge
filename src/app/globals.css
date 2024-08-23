@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100%)); }
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow: hidden;
+    gap: 10px; /* Smaller gap between cards */
+    width: 100%; /* Adjust this width as needed */
+  }
+  
+  .scroll-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .card {
+    flex: 0 0 30%; /* To fit three cards on the screen */
+  }
