@@ -33,7 +33,7 @@ export default function UserNavbar() {
                 height={50} 
                 
             />
-           <h1 className="text-xl font-bold ml-2 text-text">Book Bridge</h1>
+           <h1 className=" ml-2 text-text text-4xl font-bold leading-tight">Book Bridge</h1>
           </Link>
         </div>
 

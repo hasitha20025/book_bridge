@@ -21,8 +21,8 @@ export default function CustomDropdown({ name, menuItems }: CustomDropdownProps)
   const items: MenuProps['items'] = menuItems.map((item) => ({
     key: item.id,
     label: (
-      <Link   href={`{item.href}`}>
-        {item.label}
+      <Link   href={`{item.href}`} >
+        <span  >{item.label}</span>
       </Link>
     ),
   }));
@@ -30,7 +30,7 @@ export default function CustomDropdown({ name, menuItems }: CustomDropdownProps)
   return (
     <Dropdown menu={{ items }}>
       <Link href={``} onClick={(e) => e.preventDefault()}>
-        <Space>{name}<MdArrowDropDown /></Space>    
+        <Space className="hover:text-primary">{name}<MdArrowDropDown /></Space>    
       </Link>
     </Dropdown>
   );

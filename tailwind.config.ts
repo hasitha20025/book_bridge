@@ -29,3 +29,10 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+// <h1 class="text-4xl font-bold leading-tight">Heading 1</h1>
+// <h2 class="text-3xl font-semibold leading-snug">Heading 2</h2>
+// <h3 class="text-2xl font-semibold leading-normal">Heading 3</h3>
+// <h4 class="text-xl font-medium leading-relaxed">Heading 4</h4>
+// <h5 class="text-lg font-medium leading-relaxed">Heading 5</h5>
+// <h6 class="text-base font-medium leading-relaxed">Heading 6</h6>
