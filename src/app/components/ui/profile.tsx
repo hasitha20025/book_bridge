@@ -1,4 +1,8 @@
-
+import { AiOutlineDashboard } from "react-icons/ai";
+import { CiUser } from "react-icons/ci";
+import { CiSettings } from "react-icons/ci";
+import { IoIosLogOut } from "react-icons/io";
+import Link from 'next/link'
 import type { MenuProps } from 'antd';
 import { Dropdown as AntDropdown, Dropdown, Space } from 'antd';
 import Avatar from './avatar';
@@ -9,32 +13,36 @@ const items: MenuProps['items'] = [
   {
     key: '1',
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-        Dashboard
-      </a>
+      <Link  href="/dashboard" className="flex gap-2">
+        <AiOutlineDashboard className="my-1" /> Dashboard
+      </Link>
     ),
   },
   {
     key: '2',
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-        Profile
-      </a>
+      <Link href="/dashboard" className="flex gap-2">
+        <CiUser className="my-1" /> Profile
+      </Link>
     ),
     
   },
   {
     key: '3',
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-        Setting
-      </a>
+      <Link href="/dashboard" className="flex gap-2">
+        <CiSettings className="my-1" /> Setting
+      </Link>
     ),
   },
   {
     key: '4',
     danger: true,
-    label: 'Log out',
+    label:  (
+      <Link href="/dashboard" className="flex gap-2">
+        <IoIosLogOut className="my-1" /> Log out
+      </Link>
+    ),
   },
 ];
 
