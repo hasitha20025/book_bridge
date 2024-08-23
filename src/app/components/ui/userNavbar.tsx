@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../../../../public/imges/logo/logo.svg'
 import Search from './search';
@@ -24,7 +24,8 @@ export default function UserNavbar() {
       <div className="container mx-auto flex items-center justify-between px-4">
         
         {/* Part 1: Logo and Name */}
-        <div className="flex items-center cursor-pointer">
+        <div className=" cursor-pointer">
+          <Link href={'/'} className="flex items-center">
             <Image
                 src={Logo}
                 alt="Logo"
@@ -32,7 +33,8 @@ export default function UserNavbar() {
                 height={50} 
                 
             />
-          <h1 className="text-xl font-bold ml-2">Book Bridge</h1>
+           <h1 className="text-xl font-bold ml-2 text-text">Book Bridge</h1>
+          </Link>
         </div>
 
         {/* Part 2: Search Bar */}

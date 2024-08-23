@@ -1,8 +1,10 @@
 'use client';
 
-import { DownOutlined } from '@ant-design/icons';
+import { MdArrowDropDown } from "react-icons/md";
 import type { MenuProps } from 'antd';
 import { Dropdown, Space } from 'antd';
+import Link from 'next/link'
+
 
 type MenuItem = {
   id: string;
@@ -19,20 +21,17 @@ export default function CustomDropdown({ name, menuItems }: CustomDropdownProps)
   const items: MenuProps['items'] = menuItems.map((item) => ({
     key: item.id,
     label: (
-      <a target="_blank" rel="noopener noreferrer" href={item.href}>
+      <Link   href={`{item.href}`}>
         {item.label}
-      </a>
+      </Link>
     ),
   }));
 
   return (
     <Dropdown menu={{ items }}>
-      <a onClick={(e) => e.preventDefault()}>
-        <Space>
-          {name}
-          <DownOutlined />
-        </Space>
-      </a>
+      <Link href={``} onClick={(e) => e.preventDefault()}>
+        <Space>{name}<MdArrowDropDown /></Space>    
+      </Link>
     </Dropdown>
   );
 }
