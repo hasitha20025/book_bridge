@@ -6,12 +6,14 @@ import { AiFillTikTok } from "react-icons/ai";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 import logo from '../../../public/imges/logo/book-white-log.svg'
+import Link from 'next/link';
 
 export default function Footer() {
+  const phoneNumber = '+94784375524';
   return (
     <> 
-      <section id="footer " className='bg-text'>
-         <div className=' text-white mx-auto container'>
+      <section id="footer " className='bg-text pt-5'>
+         <div className=' text-white mx-auto container  grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8 justify-items-center pb-2'>
 
             <div>
                 <div className='flex items-center'>
@@ -23,40 +25,48 @@ export default function Footer() {
                         className=""
                         
                     />
-                    <p className='ml-2 leading-tight text-lg font-bold'>BookBridge</p>
+                    <p className='pl-2 leading-tight text-lg font-bold'>BookBridge</p>
                 </div>
-                <p>At BookBridge, we link book donors with readers and communities in need to provide access to quality literature. Help us spread education, inspiration, and a love for books.</p>
+                <p className='mt-1'>At BookBridge, we link book donors with readers and communities in need to provide access to quality literature. Help us spread education, inspiration, and a love for books.</p>
             </div>
 
             <div>
-                <h6>Quick Links</h6>
-                <p>Donate Books</p>
-                <p>Request Books</p>
-                <p>Review</p>
-                <p>About Us</p>
+                <h6 className=' leading-tight text-lg font-bold my-4'>Quick Links</h6>
+                <div className="space-y-2">
+                    <Link href="/" className="block">Donate Books</Link>
+                    <Link href="/" className="block">Request Books</Link>
+                    <Link href="/" className="block">Categories</Link>
+                    <Link href="/" className="block">Review</Link>
+                    <Link href="/" className="block">About Us</Link>
+                </div>
             </div>
 
             <div>
-                <h6>Contact Us</h6>
-                <p>Phone: +94 11 234 5678</p>
-                <p>Email: info@BookBridge.com</p>
+                <h6 className=' leading-tight text-lg font-bold my-4'>Contact Us</h6>
+                <div className='space-y-2'>
+                    <p className='py-1'>Phone: +94 11 234 5678</p>
+                    <p>Email: info@BookBridge.com</p>
+
+                    <div className='flex gap-5 pt-2'>
+                        <a href="" target="_blank" rel="noopener noreferrer"><FaFacebook size={25} /></a>
+                        <a href="" target="_blank" rel="noopener noreferrer"><FaSquareInstagram size={25} /></a>
+                        <a href="" target="_blank" rel="noopener noreferrer"><FaLinkedin size={25} /></a>
+                        <a href="" target="_blank" rel="noopener noreferrer"><AiFillTikTok size={25} /></a>
+                        <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer"><FaWhatsappSquare size={25} /></a>                       
+                    </div>
+                </div>                
             </div>
 
          </div>
 
-         <hr />
-         <div>
-            <p>Terms and Conditions</p>
-            <p>Copyright © 2024. BookBridge, Inc. All rights reserved</p>
-            <div className='flex'>
-                 <FaFacebook />
-                 <FaSquareInstagram />
-                 <FaLinkedin />
-                 <AiFillTikTok />
-                 <FaWhatsappSquare />
+         
+         <div className='text-white mx-auto container'>
+            <hr className='border-1 border-slate-200 my-2 ' />
+            <div className='  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8  justify-between py-3'>
+                <p className='text-start'>Terms and Conditions</p>
+                <p className='text-end'>Copyright © 2024. BookBridge, Inc. All rights reserved</p>            
             </div>
-         </div>
-
+         </div>       
       </section>
     
     </>

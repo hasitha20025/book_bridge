@@ -21,12 +21,11 @@ export default function RootLayout({
        
       <body className="">
           <Baner name={"Sri Lanka #1 Book sharing platform"} />
+          <UserNavbar/>
           <div className="container mx-auto"> 
-
-            <UserNavbar/>
+           
             {children}
-            
-            
+                       
           </div>
           
           <div>

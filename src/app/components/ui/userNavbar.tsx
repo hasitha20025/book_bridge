@@ -20,8 +20,8 @@ export default function UserNavbar() {
   }
 
   return (
-    <nav className="bg-white shadow-md py-1 mb-2 mt-2 sticky top-0 z-50 rounded-lg">
-      <div className=" flex items-center justify-between px-4">
+    <nav className="bg-white shadow-md py-1 mb-2 mt-2 sticky top-0 z-50 rounded-lg ">
+      <div className=" flex items-center justify-between px-4 container mx-auto">
         
         {/* Part 1: Logo and Name */}
         <div className=" cursor-pointer">
