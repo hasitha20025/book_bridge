@@ -20,7 +20,7 @@ export default function UserNavbar() {
   }
 
   return (
-    <nav className="bg-white shadow-md py-4 mb-2 sticky top-0 z-50">
+    <nav className="bg-white shadow-md py-1 mb-2 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-4">
         
         {/* Part 1: Logo and Name */}
@@ -31,10 +31,10 @@ export default function UserNavbar() {
                 alt="Logo"
                 width={50} 
                 height={50}
-                className='mt-1' 
+                className='mt-1 h-12 w-auto' 
                 
             />
-           <h1 className=" ml-2 text-text text-4xl font-bold leading-tight">Book Bridge</h1>
+           <h1 className=" ml-2 text-text  leading-tight text-lg font-bold">Book Bridge</h1>
           </Link>
         </div>
 

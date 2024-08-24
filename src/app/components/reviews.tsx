@@ -10,6 +10,7 @@ export default function Reviews() {
     }
 
     return (
+      <section id="reviews">
         <div className="px-4 sm:px-8 lg:px-16">
             <h1 className="text-center text-text my-5 text-4xl font-bold leading-tight">
                 What They <span className="text-primary">Say</span>?
@@ -44,8 +45,26 @@ export default function Reviews() {
                         comment={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
                         image={user_1.src} 
                         date={"2024/08/01"} />
+                    
+                    <ReviewCard name={"Hasitha"}
+                        comment={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
+                        image={user_1.src} 
+                        date={"2024/08/01"} />
+                    
+                    <ReviewCard name={"Hasitha"}
+                        comment={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
+                        image={user_1.src} 
+                        date={"2024/08/01"} />
+                    
+                    <ReviewCard name={"Hasitha"}
+                        comment={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}
+                        image={user_1.src} 
+                        date={"2024/08/01"} />
+
+                        
                 </div>
             </div>
         </div>
+     </section>
     )
 }
