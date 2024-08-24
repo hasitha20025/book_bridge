@@ -19,7 +19,7 @@ export default function Category() {
   return (
     <>
       <section id="category">
-        <h1 className="  text-center text-text my-5 text-4xl font-bold leading-tight">Book Categories</h1>
+        <h1 className="  text-center text-text my-8 text-2xl md:text-4xl font-bold leading-tight">Book Categories</h1>
         <div className="flex flex-wrap items-center justify-center gap-3">
 
           <CustomDropdown name="Fiction" menuItems={Fiction} />

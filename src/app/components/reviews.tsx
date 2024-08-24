@@ -12,7 +12,7 @@ export default function Reviews() {
     return (
       <section id="reviews">
         <div className="">
-            <h1 className="text-center text-text my-5 text-4xl font-bold leading-tight">
+            <h1 className="text-center text-text my-5 text-2xl md:text-4xl font-bold leading-tight">
                 What They <span className="text-primary">Say</span> ?
             </h1> 
             <p className="text-center text-base sm:text-lg">
@@ -22,9 +22,9 @@ export default function Reviews() {
                 <BoderBtn name={"Write A Review"} fun={handleClickReview} />
             </div> 
             
-            <h2 className="text-3xl font-semibold leading-snug text-center text-text my-5">Reviews</h2>
+            {/* <h2 className="text-xl md:text-3xl font-semibold leading-snug text-center text-text my-5">Reviews</h2> */}
 
-            <div className="scroll-container overflow-x-auto">
+            <div className="scroll-container overflow-x-auto my-10">
                 <div className="scroll-content flex gap-4">
                     <ReviewCard name={"Hasitha"}
                         comment={"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."}

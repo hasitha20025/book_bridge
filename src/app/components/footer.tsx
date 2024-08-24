@@ -22,13 +22,13 @@ export default function Footer() {
                 height={50}
                 className=""
               />
-              <p className='pl-2 leading-tight text-lg font-bold'>BookBridge</p>
+              <p className='pl-2 text-base md:text-xl font-medium leading-relaxed'>BookBridge</p>
             </div>
             <p className='mt-2 text-justify'>At BookBridge, we link book donors with readers and communities in need to provide access to quality literature. Help us spread education, inspiration, and a love for books.</p>
           </div>
 
           <div className='text-center md:text-left'>
-            <h6 className='leading-tight text-lg font-bold my-4'>Quick Links</h6>
+            <h6 className='text-base md:text-xl font-medium leading-relaxed my-4'>Quick Links</h6>
             <div className="space-y-2">
               <Link href="/" className="block">Donate Books</Link>
               <Link href="/" className="block">Request Books</Link>
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div className='text-center md:text-left'>
-            <h6 className='leading-tight text-lg font-bold my-4'>Contact Us</h6>
+            <h6 className='text-base md:text-xl font-medium leading-relaxed my-4'>Contact Us</h6>
             <div className='space-y-2'>
               <p className='py-1'>Phone: +94 11 234 5678</p>
               <p>Email: info@BookBridge.com</p>

@@ -6,7 +6,7 @@ export default function AboutUs() {
     <>
        <section id="aboutUs" className="my-10">
 
-       <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">About Us</h1>
+       <h1 className="text-2xl md:text-4xl font-bold leading-tight text-center text-gray-800 mb-6">About Us</h1>
        
             <p className="text-center text-base sm:text-lg leading-relaxed max-w-4xl mx-auto">
               

@@ -30,9 +30,17 @@ const config: Config = {
 };
 export default config;
 
-// <h1 class="text-4xl font-bold leading-tight">Heading 1</h1>
-// <h2 class="text-3xl font-semibold leading-snug">Heading 2</h2>
-// <h3 class="text-2xl font-semibold leading-normal">Heading 3</h3>
-// <h4 class="text-xl font-medium leading-relaxed">Heading 4</h4>
-// <h5 class="text-lg font-medium leading-relaxed">Heading 5</h5>
-// <h6 class="text-base font-medium leading-relaxed">Heading 6</h6>
+// Heading 1 (h1): text-2xl (on mobile), text-4xl (on larger screens)
+// Heading 2 (h2): text-xl (on mobile), text-3xl (on larger screens)
+// Heading 3 (h3): text-lg (on mobile), text-2xl (on larger screens)
+// Heading 4 (h4): text-base (on mobile), text-xl (on larger screens)
+// Heading 5 (h5): text-sm (on mobile), text-lg (on larger screens)
+// Heading 6 (h6): text-xs (on mobile), text-base (on larger screens)
+
+
+// <h1 class="text-2xl md:text-4xl font-bold leading-tight">Heading 1</h1>
+// <h2 class="text-xl md:text-3xl font-semibold leading-snug">Heading 2</h2>
+// <h3 class="text-lg md:text-2xl font-semibold leading-normal">Heading 3</h3>
+// <h4 class="text-base md:text-xl font-medium leading-relaxed">Heading 4</h4>
+// <h5 class="text-sm md:text-lg font-medium leading-relaxed">Heading 5</h5>
+// <h6 class="text-xs md:text-base font-medium leading-relaxed">Heading 6</h6>
