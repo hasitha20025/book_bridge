@@ -1,5 +1,5 @@
 
-export default function BoderBtn(props: { name: string; fun: () => void; className?: string }) {
+export default function BoderBtn(props: { name: string; fun:() => void;  className?: string }) {
     return (
         <>
             <button type="button" 
