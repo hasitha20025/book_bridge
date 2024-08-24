@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import UserNavbar from "./components/ui/userNavbar";
 import Baner from "./components/ui/baner";
+import Footer from "./components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
         <Baner name={"Sri Lanka #1 Book sharing platform"} />   
         <UserNavbar/>
         {children}
-
+        <Footer/>
       </body>
     </html>
   );
