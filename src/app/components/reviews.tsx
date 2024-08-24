@@ -11,9 +11,9 @@ export default function Reviews() {
 
     return (
       <section id="reviews">
-        <div className="px-4 sm:px-8 lg:px-16">
+        <div className="">
             <h1 className="text-center text-text my-5 text-4xl font-bold leading-tight">
-                What They <span className="text-primary">Say</span>?
+                What They <span className="text-primary">Say</span> ?
             </h1> 
             <p className="text-center text-base sm:text-lg">
                 At [Your Website Name], we are passionate about the power of books to inspire, educate, and bring joy...

@@ -3,6 +3,7 @@ import Category from "../../components/category";
 import Carousels from "../../components/ui/carousels";
 import Reviews from "@/app/components/reviews";
 import OurTeam from "@/app/components/ourTeam";
+import AboutUs from "@/app/components/aboutUs";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
             <New_Arrival/>
             <Reviews/>
             <OurTeam/>
+            <AboutUs/>
         </main>
     </>
   )

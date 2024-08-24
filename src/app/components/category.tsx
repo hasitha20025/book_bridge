@@ -21,10 +21,11 @@ export default function Category() {
       <section id="category">
         <h1 className="  text-center text-text my-5 text-4xl font-bold leading-tight">Book Categories</h1>
         <div className="flex flex-wrap items-center justify-center gap-3">
+
           <CustomDropdown name="Fiction" menuItems={Fiction} />
           <CustomDropdown name="Non-Fiction" menuItems={Non_Fiction} />
           <CustomDropdown name="Reference" menuItems={Reference} />
-          <CustomDropdown name="Academic & Educational" menuItems={Academic_and_Educational} />
+          <CustomDropdown name="Academic" menuItems={Academic_and_Educational} />
           <CustomDropdown name="Others" menuItems={Others} />
           <CustomDropdown name="Hobbies" menuItems={Hobbies} />
           <CustomDropdown name="Pre School" menuItems={PreSchool} />

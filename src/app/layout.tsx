@@ -18,12 +18,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       
       <body className="">
-        <Baner name={"Sri Lanka #1 Book sharing platform"} />   
-        <UserNavbar/>
-        {children}
-        <Footer/>
+          <Baner name={"Sri Lanka #1 Book sharing platform"} />
+          <div className="container mx-auto"> 
+
+            <UserNavbar/>
+            {children}
+            
+            
+          </div>
+          
+          <div>
+            <Footer/>
+          </div>
       </body>
+
     </html>
   );
 }

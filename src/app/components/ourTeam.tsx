@@ -13,6 +13,7 @@ export default function OurTeam() {
         <h1 className="text-3xl font-semibold text-center text-text mb-8">Meet Our Team</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+          
            <TeamCard image={team_01.src} position={'Front-End Developer'} name={'Hasitha Dhananjaya'}/>
            <TeamCard image={team_02.src} position={'UI designer'} name={'venuri'}/>       
            <TeamCard image={team_04.src} position={'Front-End Developer'} name={'Sadun'}/>

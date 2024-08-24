@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react'
 import Book_card from './ui/book_card'
 import book_1 from '../../../public/imges/books/book_1.png'

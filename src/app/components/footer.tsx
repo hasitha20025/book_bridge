@@ -10,8 +10,8 @@ import logo from '../../../public/imges/logo/book-white-log.svg'
 export default function Footer() {
   return (
     <> 
-      <section id="footer">
-         <div>
+      <section id="footer " className='bg-text'>
+         <div className=' text-white mx-auto container'>
 
             <div>
                 <div className='flex items-center'>
@@ -23,7 +23,7 @@ export default function Footer() {
                         className=""
                         
                     />
-                    <p>BookBridge</p>
+                    <p className='ml-2 leading-tight text-lg font-bold'>BookBridge</p>
                 </div>
                 <p>At BookBridge, we link book donors with readers and communities in need to provide access to quality literature. Help us spread education, inspiration, and a love for books.</p>
             </div>
