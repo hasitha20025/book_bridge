@@ -1,6 +1,6 @@
 'use client';
 
-export default function LongBtn(props: { name: string; fun: () => void; className?: string }) {
+export default function LongBtn(props: { name: string; fun?: (e: React.MouseEvent<HTMLButtonElement>) => void; className?: string; type?: "button" | "submit" | "reset" | undefined }) {
     return (
         <>
             <button type="button" 

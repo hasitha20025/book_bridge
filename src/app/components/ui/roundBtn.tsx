@@ -1,6 +1,6 @@
 
 
-export default function RoundBtn(props: { name: string; fun: () => void }) {
+export default function RoundBtn(props: { name: string; fun?: (e: React.MouseEvent<HTMLButtonElement>) => void; className?: string; type?: "button" | "submit" | "reset" | undefined }) {
     return (
         <>
             <button type="button" 

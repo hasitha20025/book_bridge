@@ -1,21 +1,26 @@
-
 import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import BoderBtn from "./boderBtn";
+import ThankYouModal from './thankYouModal';
 
 export default function FeedBackForm() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isThankYouOpen, setIsThankYouOpen] = useState(false);
+
     const openModal = () => setIsOpen(true);
     const closeModal = () => setIsOpen(false);
+
+    const openThankYouModal = () => setIsThankYouOpen(true);
+    const closeThankYouModal = () => setIsThankYouOpen(false);
 
     const [name, setName] = useState("");
     const [feedback, setFeedback] = useState("");
 
     function handleSubmit(e: { preventDefault: () => void; }) {
-
         e.preventDefault();
         console.log("Name:", name, "Feedback:", feedback);
         closeModal();
+        openThankYouModal();  // Open the thank you modal after submission
     }
 
     return (
@@ -81,13 +86,14 @@ export default function FeedBackForm() {
                                 </div>
 
                                 <div className="flex justify-center">
-                                    <BoderBtn name={"Submit"} type={"submit"} fun={() => handleSubmit} />
+                                    <BoderBtn name={"Submit"} type={"submit"} />
                                 </div>
                             </form>
                         </div>
                     </div>
                 </Dialog>
 
+                <ThankYouModal isOpen={isThankYouOpen} closeModal={closeThankYouModal} />
             </div>
         </>
     )
