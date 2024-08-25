@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import BoderBtn from "./boderBtn";
 import ThankYouModal from './thankYouModal';
+import { IoMdCloseCircle } from "react-icons/io";
 
 export default function FeedBackForm() {
     const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +43,9 @@ export default function FeedBackForm() {
                             &#8203;
                         </span>
                         <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-lg">
+                            <div className='flex justify-end'>
+                                <button type="button" onClick={closeModal}><IoMdCloseCircle className='hover:text-primary' size={20} /></button>
+                            </div>
                             <Dialog.Title
                                 as="h3"
                                 className="text-lg font-medium leading-6 text-gray-900 text-center"
